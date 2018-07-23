@@ -15,6 +15,7 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "three": "^0.94.0"
   }
 }
