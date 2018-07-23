@@ -1,6 +1,6 @@
 {
   "name": "equiviewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Equirectangular images viewer",
   "main": "./lib/equiviewer.js",
   "scripts": {
