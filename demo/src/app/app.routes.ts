@@ -6,7 +6,7 @@ import { Routes } from '@angular/router';
 // import { RepoListComponent } from './github/repo-list/repo-list.component';
 // import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 // import { ContactComponent } from './contact/contact.component';
-import { AboutComponent, ContactComponent, HomeComponent } from './components';
+// import { AboutComponent, ContactComponent, HomeComponent } from './components';
 
 // export const rootRouterConfig: Routes = [
 //   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,7 +26,7 @@ import { AboutComponent, ContactComponent, HomeComponent } from './components';
 // ];
 
 export var states = [
-  { name: 'about', url: '/about', component: AboutComponent },
-  { name: 'home', url: '/home', component: HomeComponent },
-  { name: 'contact', url: '/contact', component: ContactComponent },
+  // { name: 'about', url: '/about', component: AboutComponent },
+  // { name: 'home', url: '/home', component: HomeComponent },
+  // { name: 'contact', url: '/contact', component: ContactComponent },
 ];

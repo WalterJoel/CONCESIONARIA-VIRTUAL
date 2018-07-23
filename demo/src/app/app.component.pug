@@ -1,13 +1,6 @@
-div
-  h3 Angular 4 with UI-Router Seed
+div(
+  id="eqviewer",
+  style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; opacity: 0; transition:All 0.3s ease; -webkit-transition:All 0.3s ease; -moz-transition:All 0.3s ease; -o-transition:All 0.3s ease;"
+)
 
-  img(src="assets/image.png")
-  nav
-    a(uiSref="home", uiSrefActive="active") Home |
-    a(uiSref="about", uiSrefActive="active") About |
-    a(uiSref="contact", uiSrefActive="active") Contact Us
-
-  main
-    ui-view
-
-  footer © 2017
+p(*ngIf="suggestMsg") Please add imgUrl attribute inside query params to render equi image

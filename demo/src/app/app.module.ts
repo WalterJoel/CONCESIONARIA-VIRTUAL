@@ -7,10 +7,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { UIRouterModule } from "@uirouter/angular";
-import { componentsList } from './components';
 
 @NgModule({
-  declarations: [AppComponent].concat(componentsList),
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     FormsModule,
