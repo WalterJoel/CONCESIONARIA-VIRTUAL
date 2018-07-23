@@ -5,6 +5,8 @@ var webpackMerge = require('webpack-merge');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackOnBuildPlugin = require('on-build-webpack');
 
+var outputDir = (process.env.NODE_ENV=='prod' ? './dist-prod' : './dist');
+
 // Webpack Config
 var webpackConfig = {
   entry: {
@@ -13,7 +15,7 @@ var webpackConfig = {
 
   output: {
     publicPath: '',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, outputDir),
   },
 
   plugins: [
@@ -31,7 +33,7 @@ var webpackConfig = {
     }),
 
     new WebpackOnBuildPlugin(function(stats) {
-      fs.copySync('src/assets', 'dist/assets')
+      fs.copySync('src/assets', outputDir+'/assets')
     }),
 
   ],
